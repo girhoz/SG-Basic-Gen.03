@@ -9,12 +9,18 @@ def readData(data1):
 	return x
 
 x = readData(data1)
-y = readData(data2)
-
 txt = []
 for i in x:
-	if i in y:
-		if i not in txt:
-			txt.append(i)
+	if i == 'I':
+		txt.append('*')
+	elif i == 'and':
+		txt.append('*'*3)
+	elif i == 'The':
+		txt.append('*'*3)
+	elif i == 'you':
+		txt.append('*'*3)
+	else:
+		txt.append(i)
 
+txt = ' '.join(txt)
 print (txt)
